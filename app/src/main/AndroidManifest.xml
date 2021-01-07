@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.miguel_lm.penha_celta">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/teixugos_celestes"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/teixugos_celestes_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TeixugosCelestes">
+        <activity android:name=".ui.PerfilActivity"></activity>
+        <activity android:name=".ui.ActivityFirst" />
+        <activity android:name=".ui.Registro_Firbase" />
+        <activity
+            android:name=".ui.ActivityPerfil"
+            tools:ignore="ExtraText">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.MainActivity" />
+        </activity>
+        <activity android:name=".ui.HomeActivity" />
+        <activity
+            android:name=".ui.MainActivity"
+            android:configChanges="orientation"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "117652032456",
+    "project_id": "app-teixugos-celestes",
+    "storage_bucket": "app-teixugos-celestes.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:117652032456:android:9682d87e373936399a8efd",
+        "android_client_info": {
+          "package_name": "com.miguel_lm.penha_celta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "117652032456-7fn45qrtu5fs4kajrtedj24u91giscto.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAcn2JCoiUCu1KyoCZ7K_y8Wp4piVOxyk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "117652032456-7fn45qrtu5fs4kajrtedj24u91giscto.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

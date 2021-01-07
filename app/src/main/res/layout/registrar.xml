@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B3E5FC">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_tituloRegistrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="@font/uncial_antiqua"
+            android:text="@string/titulo_registrar"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#020202"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:fontFamily="@font/amaranth"
+            android:text="@string/tv_nombre"
+            android:textColor="#020202"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/ed_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="4dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:fontFamily="@font/amaranth"
+            android:inputType="textPersonName"
+            android:textColor="#020202"
+            android:textSize="14sp"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:id="@+id/tv_primerApellido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:fontFamily="@font/amaranth"
+            android:text="@string/tv_primer_apellido"
+            android:textColor="#020202"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/ed_primerApellido"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="4dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="#020202"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:id="@+id/tv_segundoApellido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:fontFamily="@font/amaranth"
+            android:text="@string/tv_segundo_apellido"
+            android:textColor="#020202"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/ed_segundoApellido"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="4dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="#020202"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:id="@+id/tv_fechaNaci"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:fontFamily="@font/amaranth"
+            android:text="@string/tv_fecha_nacimiento"
+            android:textColor="#020202"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/ed_fechaNaci"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="4dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:inputType="date"
+            android:textColor="#020202"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:id="@+id/tv_telefeno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:fontFamily="@font/amaranth"
+            android:text="@string/tv_telefono"
+            android:textColor="#020202"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/ed_telefono"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="4dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:inputType="phone"
+            android:textColor="#020202"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:fontFamily="@font/amaranth"
+            android:text="@string/tv_email"
+            android:textColor="#020202"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/ed_email_registrar"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="6dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:textColor="#020202"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:id="@+id/tv_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:fontFamily="@font/amaranth"
+            android:text="@string/tv_password"
+            android:textColor="#020202"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/ed_PasswordRegistrar"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="6dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:inputType="textPassword"
+            android:textColor="#020202"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:id="@+id/tv_repetirPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:fontFamily="@font/amaranth"
+            android:text="@string/tv_repetir_password"
+            android:textColor="#020202"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/ed_repetirPassword"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="6dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:inputType="textPassword"
+            android:textColor="#020202"
+            tools:ignore="LabelFor" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bt_cancelar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="40dp"
+                android:layout_weight="1"
+                android:backgroundTint="#FF1744"
+                android:fontFamily="@font/amaranth"
+                android:text="@string/btn_cancelar"
+                android:textColor="#020202"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/bt_registrar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_weight="1"
+                android:backgroundTint="#00E676"
+                android:fontFamily="@font/amaranth"
+                android:text="@string/btn_registrar"
+                android:textColor="#020202"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:ignore="ButtonStyle" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
