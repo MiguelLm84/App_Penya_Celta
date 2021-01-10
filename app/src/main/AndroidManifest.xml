@@ -3,6 +3,7 @@
     package="com.miguel_lm.penha_celta">
 
     <application
+        android:name=".ui.MyFarebaseApp"
         android:allowBackup="true"
         android:icon="@mipmap/teixugos_celestes"
         android:label="@string/app_name"
