@@ -5,7 +5,7 @@
     android:id="@+id/btn_cerrar"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.HomeActivity">
+    tools:context=".ui.ActivityCerrarSesion">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -22,6 +22,7 @@
             android:id="@+id/tv_cerrar_sesion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
             android:fontFamily="@font/uncial_antiqua"
             android:text="@string/tv_cerrar_sesion"
             android:textAlignment="center"
@@ -30,35 +31,45 @@
             android:textSize="20sp"
             android:textStyle="bold" />
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="32dp" />
-
-        <EditText
-            android:id="@+id/ed_email"
+        <TextView
+            android:id="@+id/tv_titulo_nombre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:autofillHints=""
-            android:ems="10"
-            android:fontFamily="@font/amaranth"
-            android:hint="@string/hint_email"
-            android:inputType="textEmailAddress"
+            android:fontFamily="@font/uncial_antiqua"
+            android:text="@string/tv_nombre"
             android:textColor="#020202"
             android:textSize="16sp" />
 
-        <EditText
-            android:id="@+id/ed_Password"
+        <TextView
+            android:id="@+id/tv_nombre_cerrar_sesion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="32dp"
+            android:layout_marginBottom="8dp"
             android:autofillHints=""
             android:ems="10"
             android:fontFamily="@font/amaranth"
-            android:hint="@string/hint_password"
-            android:inputType="textPassword"
             android:textColor="#020202"
-            android:textSize="16sp"
-            tools:ignore="LabelFor" />
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_titulo_correo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/uncial_antiqua"
+            android:text="@string/tv_email"
+            android:textColor="#020202"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_email_cerrara_sesion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:fontFamily="@font/amaranth"
+            android:textColor="#020202"
+            android:textSize="18sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -66,12 +77,13 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/btn_registrar"
+                android:id="@+id/btn_cerrar_sesion"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:backgroundTint="#FF1744"
                 android:fontFamily="@font/amaranth"
                 android:text="@string/bt_cerrar"
+                android:textColor="#020202"
                 android:textSize="15sp"
                 android:textStyle="bold"
                 tools:ignore="ButtonStyle" />

@@ -35,6 +35,15 @@
 
     <style name="AppTheme" parent="Theme.TeixugosCelestes">AppTheme_splash</style>
 
+    <style name="Theme.TeixugosCelestes.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.TeixugosCelestes.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.TeixugosCelestes.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
     <!--style name="AppTheme" parent="Theme.TeixugosCelestes">
         <item name="android:windowBackground">@drawable/poster_rc_celta_2020_2021_1024x723</item>
     </style-->

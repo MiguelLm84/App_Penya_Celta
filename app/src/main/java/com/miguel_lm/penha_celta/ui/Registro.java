@@ -52,7 +52,7 @@ public class Registro extends AppCompatActivity {
         ed_email = findViewById(R.id.ed_email_registro);
         ed_password = findViewById(R.id.ed_PasswordRegistro);
         btn_cancelar = findViewById(R.id.bt_cancelar);
-        btn_registrar = findViewById(R.id.btn_registrar);
+        btn_registrar = findViewById(R.id.btn_cerrar_sesion);
 
         btn_cancelar.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -28,6 +28,7 @@ public class Registro_Firbase extends AppCompatActivity {
     String email = "";
     String password = "";
 
+    private long tiempoParaSalir = 0;
     FirebaseAuth mAuth;
     DatabaseReference mDatabase;
 
@@ -35,9 +36,9 @@ public class Registro_Firbase extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registro__firbase);
-
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setIcon(R.mipmap.ic_teixugos);
+        getSupportActionBar().setIcon(R.mipmap.teixugos_celestes_round);
         overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
 
         mAuth = FirebaseAuth.getInstance();
@@ -50,6 +51,7 @@ public class Registro_Firbase extends AppCompatActivity {
         btn_registrar = findViewById(R.id.bt_registrar2);
 
         btn_cancelar.setOnClickListener(v -> {
+
         });
 
         btn_registrar.setOnClickListener(v -> {
@@ -67,6 +69,16 @@ public class Registro_Firbase extends AppCompatActivity {
                 Toast.makeText(Registro_Firbase.this,"Debe completar los campos",Toast.LENGTH_SHORT).show();
             }
         });
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+
+        if(mAuth.getCurrentUser() != null){
+            startActivity(new Intent(Registro_Firbase.this, ActivityCerrarSesion.class));
+            finish();
+        }
     }
 
     private void registrarUsuario(){
@@ -92,5 +104,27 @@ public class Registro_Firbase extends AppCompatActivity {
                 Toast.makeText(Registro_Firbase.this,"Error, no se pudo registrar este usuario",Toast.LENGTH_SHORT).show();
             }
         });
+    }
+
+    /*@Override
+    public void onBackPressed(){
+
+        long tiempo = System.currentTimeMillis();
+        if (tiempo - tiempoParaSalir > 3000) {
+            tiempoParaSalir = tiempo;
+            Toast.makeText(this, "Presione de nuevo 'Atrás' si desea salir",
+                    Toast.LENGTH_SHORT).show();
+        } else {
+            super.onBackPressed();
+            overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+        }
+    }*/
+
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(this, MainActivity.class);
+        intent.addCategory(Intent.CATEGORY_HOME);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
     }
 }

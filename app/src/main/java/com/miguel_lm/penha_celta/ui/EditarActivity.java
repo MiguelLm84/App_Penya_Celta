@@ -7,18 +7,18 @@ import android.widget.Toast;
 
 import com.miguel_lm.penha_celta.R;
 
-public class ActivityPerfil extends AppCompatActivity {
+public class EditarActivity extends AppCompatActivity {
 
     private long tiempoParaSalir = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_perfil);
+        setContentView(R.layout.activity_editar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setIcon(R.mipmap.ic_teixugos);
+        getSupportActionBar().setIcon(R.mipmap.teixugos_celestes_round);
         overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
-
     }
 
     @Override
