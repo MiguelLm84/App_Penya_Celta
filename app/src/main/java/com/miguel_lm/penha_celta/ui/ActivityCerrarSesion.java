@@ -42,7 +42,7 @@ public class ActivityCerrarSesion extends AppCompatActivity {
 
         btn_cerrarSesion.setOnClickListener(v -> {
             mAuth.signOut();
-            startActivity(new Intent(ActivityCerrarSesion.this, ActivityNavigationDrawer.class));
+            startActivity(new Intent(ActivityCerrarSesion.this, MainActivity.class));
             finish();
         });
 

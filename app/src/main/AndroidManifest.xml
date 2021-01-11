@@ -10,55 +10,61 @@
         android:roundIcon="@mipmap/teixugos_celestes_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TeixugosCelestes">
-        <activity android:name=".ui.ActivityNoticias"
+        <activity android:name=".ui.ActivityEventos"></activity>
+        <activity android:name=".ui.ActivityListaMiembros" />
+        <activity
+            android:name=".ui.ActivityNoticias"
             android:parentActivityName=".ui.ActivityNavigationDrawer">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".ui.ActivityNavigationDrawer"/>
+                android:value=".ui.ActivityNavigationDrawer" />
         </activity>
-        <activity android:name=".ui.EditarActivity"
-            android:parentActivityName=".ui.PerfilActivity"/>
+        <activity
+            android:name=".ui.EditarActivity"
+            android:parentActivityName=".ui.PerfilActivity" />
+
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
-            android:value=".ui.PerfilActivity"/>
+            android:value=".ui.PerfilActivity" />
+
         <activity
             android:name=".ui.ActivityNavigationDrawer"
             android:label="@string/title_activity_navigation_drawer"
-            android:theme="@style/Theme.TeixugosCelestes.NoActionBar"/>
+            android:theme="@style/Theme.TeixugosCelestes.NoActionBar" />
         <activity
             android:name=".ui.PerfilActivity"
             android:parentActivityName=".ui.ActivityNavigationDrawer">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".ui.ActivityNavigationDrawer"/>
+                android:value=".ui.ActivityNavigationDrawer" />
         </activity>
         <activity
             android:name=".ui.ActivityFirst"
             android:parentActivityName=".ui.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".ui.MainActivity"/>
+                android:value=".ui.MainActivity" />
         </activity>
         <activity
             android:name=".ui.Registro_Firbase"
             android:parentActivityName=".ui.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".ui.MainActivity"/>
+                android:value=".ui.MainActivity" />
         </activity>
         <activity
             android:name=".ui.ActivityPerfil"
-            android:parentActivityName=".ui.Registro"> <!--tools:ignore="ExtraText"-->
+            android:parentActivityName=".ui.Registro"> <!-- tools:ignore="ExtraText" -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".ui.Registro"/>
+                android:value=".ui.Registro" />
         </activity>
         <activity
             android:name=".ui.ActivityCerrarSesion"
             android:parentActivityName=".ui.ActivityNavigationDrawer">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".ui.ActivityNavigationDrawer"/>
+                android:value=".ui.ActivityNavigationDrawer" />
         </activity>
         <activity
             android:name=".ui.MainActivity"

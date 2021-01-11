@@ -1,12 +1,6 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <string name="app_name">Teixugos Celestes</string>
     <string name="todo">TODO</string>
-    <string name="anhadir_penhista">Añadir Peñista</string>
-    <string name="nuevo_penhista">Nuevo Peñista</string>
-    <string name="ultimas_noticias">Últimas Noticias</string>
-    <string name="modificar_datos">Modificar Datos</string>
-    <string name="eliminar_penhista">Eliminar Peñista</string>
-    <string name="datos_personales">Datos Personales</string>
     <string name="bt_registrar">Registrar</string>
     <string name="bt_acceder">Acceder</string>
     <string name="tv_login">Login</string>
@@ -46,7 +40,11 @@
     <string name="tv_name">Name</string>
     <string name="tv_num_socio">11111</string>
     <string name="cerrar_sesion">Cerrar Sesión</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="tv_fechaNaci">01 Enero de 2021</string>
+    <string name="accionMiembros">Miembros</string>
+    <string name="accionNoticias">Noticias</string>
+    <string name="accionEventos">Eventos</string>
+    <string name="tv_n_socio">Nº socio:</string>
+    <string name="tv_numero_socio">1111</string>
 </resources>

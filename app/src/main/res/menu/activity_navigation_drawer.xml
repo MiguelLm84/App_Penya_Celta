@@ -2,24 +2,16 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/accionAnhadirNuevo"
+        android:id="@+id/accionEventos"
         android:icon="@android:drawable/ic_dialog_info"
-        android:title="@string/nuevo_penhista" />
+        android:title="@string/accionEventos" />
     <item
-        android:id="@+id/accionUltimasNoticias"
-        android:title="@string/ultimas_noticias" />
+        android:id="@+id/accionNoticias"
+        android:title="@string/accionNoticias" />
     <item
-        android:id="@+id/accionModificar"
+        android:id="@+id/accionMiembros"
         android:icon="@android:drawable/ic_dialog_info"
-        android:title="@string/modificar_datos" />
-    <item
-        android:id="@+id/accionEliminar"
-        android:icon="@android:drawable/ic_dialog_info"
-        android:title="@string/eliminar_penhista" />
-    <item
-        android:id="@+id/accionDatosPersonales"
-        android:icon="@android:drawable/ic_dialog_info"
-        android:title="@string/datos_personales" />
+        android:title="@string/accionMiembros" />
     <item
         android:id="@+id/accionCerrarSesion"
         android:title="@string/cerrar_sesion" />

@@ -2,7 +2,6 @@ package com.miguel_lm.penha_celta.ui;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -87,31 +86,19 @@ public class MainActivity extends AppCompatActivity {
         //Fragment fragmentMenu = null;
         //boolean fragmentSeleccionado = false;
 
-        if (item.getItemId() == R.id.accionAnhadirNuevo) {
+        if (item.getItemId() == R.id.accionEventos) {
             accionNuevoMiembro();
 
             //fragmentMenu = new FragmentAdd();
             //fragmentSeleccionado = true;
 
-        } else if (item.getItemId() == R.id.accionUltimasNoticias) {
+        } else if (item.getItemId() == R.id.accionNoticias) {
             accionUltimasNoticias();
 
             //fragmentMenu = new FragmentNoticias();
             //fragmentSeleccionado = true;
 
-        } else if (item.getItemId() == R.id.accionModificar) {
-            accionModificarDatos();
-
-            //fragmentMenu = new FragmentModificar();
-            //fragmentSeleccionado = true;
-
-        } else if (item.getItemId() == R.id.accionEliminar) {
-            accionEliminarMiembro();
-
-            //fragmentMenu = new FragmentEliminar();
-            //fragmentSeleccionado = true;
-
-        } else if (item.getItemId() == R.id.accionDatosPersonales) {
+        }  else if (item.getItemId() == R.id.accionMiembros) {
             accionDatosPersonales();
 
             /*fragmentMenu = new FragmentDatosPersonales();

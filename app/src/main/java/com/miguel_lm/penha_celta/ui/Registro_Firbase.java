@@ -1,5 +1,6 @@
 package com.miguel_lm.penha_celta.ui;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
@@ -31,6 +32,7 @@ public class Registro_Firbase extends AppCompatActivity {
     private long tiempoParaSalir = 0;
     FirebaseAuth mAuth;
     DatabaseReference mDatabase;
+    ProgressDialog progressDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,6 +63,7 @@ public class Registro_Firbase extends AppCompatActivity {
 
             if(!nombre.isEmpty() && !email.isEmpty() && !password.isEmpty()){
                 if(password.length()>=6){
+                    progressDialog = new ProgressDialog(this);
                     registrarUsuario();
                 } else {
                     Toast.makeText(Registro_Firbase.this,"El password debe tener al menos 6 caracteres",Toast.LENGTH_SHORT).show();
@@ -71,7 +74,7 @@ public class Registro_Firbase extends AppCompatActivity {
         });
     }
 
-    @Override
+    /*@Override
     protected void onStart() {
         super.onStart();
 
@@ -79,7 +82,7 @@ public class Registro_Firbase extends AppCompatActivity {
             startActivity(new Intent(Registro_Firbase.this, ActivityCerrarSesion.class));
             finish();
         }
-    }
+    }*/
 
     private void registrarUsuario(){
 

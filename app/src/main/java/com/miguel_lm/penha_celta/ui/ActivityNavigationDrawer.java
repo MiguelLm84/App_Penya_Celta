@@ -73,32 +73,20 @@ public class ActivityNavigationDrawer extends AppCompatActivity {
         //Fragment fragmentMenu = null;
         //boolean fragmentSeleccionado = false;
 
-        if (item.getItemId() == R.id.accionAnhadirNuevo) {
-            accionNuevoMiembro();
+        if (item.getItemId() == R.id.accionEventos) {
+            accionEventos();
 
             //fragmentMenu = new FragmentAdd();
             //fragmentSeleccionado = true;
 
-        } else if (item.getItemId() == R.id.accionUltimasNoticias) {
-            accionUltimasNoticias();
+        } else if (item.getItemId() == R.id.accionNoticias) {
+            accionNoticias();
 
             //fragmentMenu = new FragmentNoticias();
             //fragmentSeleccionado = true;
 
-        } else if (item.getItemId() == R.id.accionModificar) {
-            accionModificarDatos();
-
-            //fragmentMenu = new FragmentModificar();
-            //fragmentSeleccionado = true;
-
-        } else if (item.getItemId() == R.id.accionEliminar) {
-            accionEliminarMiembro();
-
-            //fragmentMenu = new FragmentEliminar();
-            //fragmentSeleccionado = true;
-
-        } else if (item.getItemId() == R.id.accionDatosPersonales) {
-            accionDatosPersonales();
+        } else if (item.getItemId() == R.id.accionMiembros) {
+            accionMiembros();
 
             /*fragmentMenu = new FragmentDatosPersonales();
             fragmentSeleccionado = true;*/
@@ -117,32 +105,20 @@ public class ActivityNavigationDrawer extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void accionNuevoMiembro(){
-        Intent intent = new Intent(ActivityNavigationDrawer.this, Registro_Firbase.class);
+    public void accionEventos(){
+        Intent intent = new Intent(ActivityNavigationDrawer.this, ActivityEventos.class);
         startActivity(intent);
         finish();
     }
 
-    public void accionUltimasNoticias(){
+    public void accionNoticias(){
         Intent intent = new Intent(ActivityNavigationDrawer.this, ActivityNoticias.class);
         startActivity(intent);
         finish();
     }
 
-    public void accionModificarDatos(){
-        /*Intent intent = new Intent(ActivityNavigationDrawer.this, ActivityNavigationDrawer.class);
-        startActivity(intent);
-        finish();*/
-    }
-
-    public void accionEliminarMiembro(){
-        /*Intent intent = new Intent(ActivityNavigationDrawer.this, ActivityNavigationDrawer.class);
-        startActivity(intent);
-        finish();*/
-    }
-
-    public void accionDatosPersonales(){
-        Intent intent = new Intent(ActivityNavigationDrawer.this, ActivityPerfil.class);
+    public void accionMiembros(){
+        Intent intent = new Intent(ActivityNavigationDrawer.this, ActivityListaMiembros.class);
         startActivity(intent);
         finish();
     }
